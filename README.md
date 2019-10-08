@@ -82,7 +82,7 @@ You can give the plugin a try in our [playground](https://loilo.github.io/pretti
 yarn:
 
 ```bash
-yarn add --dev prettier @prettier/plugin-php
+yarn add -D prettier @prettier/plugin-php
 # or globally
 yarn global add prettier @prettier/plugin-php
 ```
@@ -90,31 +90,21 @@ yarn global add prettier @prettier/plugin-php
 npm:
 
 ```bash
-npm install --save-dev prettier @prettier/plugin-php
+npm install -D prettier @prettier/plugin-php
 # or globally
-npm install --global prettier @prettier/plugin-php
+npm install -g prettier @prettier/plugin-php
 ```
 
 ## Use
 
 ### With Node.js
 
-If you installed prettier as a local dependency, you can add prettier as a script in your `package.json`,
-
-```json
-{
-  "scripts": {
-    "prettier": "prettier"
-  }
-}
-```
-
-and then run it via
+If you installed prettier as a local dependency, you can run it via
 
 ```bash
-yarn run prettier path/to/file.php --write
+yarn prettier path/to/file.php --write
 # or
-npm run prettier -- path/to/file.php --write
+npx prettier path/to/file.php --write
 ```
 
 If you installed globally, run
